@@ -4,6 +4,8 @@ class WordGuesserGame
   # Get a word from remote "random word" service
   attr_accessor :word, :guesses, :wrong_guesses
 
+  #making diff for merge
+
   def initialize(word)
     @word = word
     @guesses = ''
@@ -25,7 +27,7 @@ class WordGuesserGame
   end
 
   def guess(letter)
-    
+    #byebug
     if letter.nil? || letter.empty? || !letter.match?(/[a-zA-Z]/)
       raise ArgumentError
     end
